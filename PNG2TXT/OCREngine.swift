@@ -11,9 +11,9 @@ class OCREngine {
         var errorDescription: String? {
             switch self {
             case .imageConversionFailed(let name):
-                return "Could not convert image "\(name)" to a processable format."
+                return "Could not convert image \"\(name)\" to a processable format."
             case .recognitionFailed(let name):
-                return "Text recognition failed for "\(name)"."
+                return "Text recognition failed for \"\(name)\"."
             }
         }
     }
